@@ -70,7 +70,7 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #87CEEB;
-}
+} 
 /* About Section */
 #about{
     padding: 80px 0;
@@ -316,8 +316,57 @@ form .btn2{
 p span{
     color: #87CEEB;
 }
-.kevin {
-    color: #ff004f;
+/*Glitch Effect*/
+.glitch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    cursor: pointer;
+}
+.glitch::before, .glitch::after{
+    content: 'ANGELO';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.glitch:hover::before{
+    animation: glitch 0.3s linear 6;
+    color: #e91e63;
+    z-index: -2;
+}
+.glitch:hover::after{
+    animation: glitch 0.3s linear 6 reverse;
+    color: #2196f3;
+    z-index: -1;
+}
+@keyframes glitch{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    20%{
+        top: -5px;
+        left: -5px;
+    }
+    40%{
+        top: 5px;
+        left: 5px;
+    }
+    60%{
+        top: -5px;
+        left: 5px;
+    }
+    80%{
+        top: 5px;
+        left: -5px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
 }
 /*Small Screens*/
 nav .fas{
@@ -326,7 +375,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/smallscreenbackground.jpg);
+        background-image: url(images/ssbg.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -385,5 +434,4 @@ nav .fas{
     color: #87CEEB;
     margin-top: -40px;
     display: block;
-
 }

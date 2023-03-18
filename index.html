@@ -25,7 +25,7 @@
             </nav>
             <div class="header-text">
                 <p>Full Time Student</p>
-                <h1>Hi, I'm <span>Angelo</span><br>Dela Torre!</h1>
+                <h1>Hi, I'm <span class="auto-typed">Angelo</span></h1>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I'm Angelo Dela Torre, a full time first year college student at Pateros Technological College. I'm currently studying Java. Right now, I don't have any projects or services at the moment.</p>
+                    <p>Hi! My name is Angelo Dela Torre, 20 years old from the Philippines. BSIT Student at Pateros Technological College.</p>
                 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -47,17 +47,17 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Full Time Student</span><br>Still learning...</li>
+                            <li><span>No skills</span><br>Still learning...</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023 - Current</span><br>First Year College at Pateros Technological College. No work experience at the moment. </li>
+                            <li><span>2023 - Current</span><br>No work experience at the moment. </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2023 - Current</span><br>Pateros Technological College</li>
+                            <li><span>2022 - 2023 - Current</span><br>Pateros Technological College</li>
                             <li><span>2019 - 2021</span><br>AMA Computer College - Pasig</li>
                             <li><span>2014 - 2019</span><br>Nagpayong High School</li>
                             <li><span>2009 - 2014</span><br>Nagpayong Elementary School</li>
@@ -204,6 +204,16 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-    
+
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-typed", {
+            strings: ["Angelo ", " Dela Torre"],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        })
+    </script>
+
 </body>
 </html>
